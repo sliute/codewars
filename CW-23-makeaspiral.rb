@@ -100,7 +100,7 @@ def spiralize(size)
 end
 
 
-
+=begin
 
 def spiralize(size)
   return [] if size == 0
@@ -156,3 +156,5 @@ def spiralize(size)
   draw(x,y, grid, dir_x, dir_y, flag, 0)
   grid
 end
+
+=end

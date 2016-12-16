@@ -35,8 +35,7 @@ def fib(n)
   end
 end
 
-
-
+=begin
 
 require 'matrix'
 
@@ -61,3 +60,5 @@ def fib(n)
     b
   end
 end
+
+=end
