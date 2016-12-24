@@ -1,19 +1,15 @@
-str = 'abcdef_ghijkl_mnopqr'
+def to_camel_case(str)
+  str_arr = str.split('-') if str.include?('-')
+  str_arr = str.split('_') if str.include?('_')
+  return '' if str_arr == nil
+  camel_case = ''
+  str_arr[0] == str_arr[0].capitalize ? cap = 1 : cap = 0
+  str_arr.each { |item| camel_case << item.capitalize}
+  camel_case[0] = camel_case[0].downcase! if cap == 0
+  camel_case
+end
 
-str_arr = str.split('-') if str.include?('-')
-str_arr = str.split('_') if str.include?('_')
-
-camel_case = ''
-str_arr[0] == str_arr[0].capitalize ? cap = 1 | cap = 0
-
-str_arr.each { |item| camel_case << item}
-
-camel_case.downcase! if cap == 0
-
-puts camel_case
-
-
-#top solution
+=begin
 
 def to_camel_case(str)
   str.gsub(/[_-](.)/) {"#{$1.upcase}"}
@@ -28,3 +24,5 @@ def to_camel_case(str)
    m[1].upcase
   end
 end
+
+=end

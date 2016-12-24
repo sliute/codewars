@@ -17,11 +17,11 @@ def sol_equa(n)
       end
     end
     arr.reverse!
-
 end
 
+=begin
+
 def sol_equa(n)
-    # your code
     result = []
     (1..(n**0.5).floor).each do |i|
       next unless n % i == 0
@@ -33,3 +33,5 @@ def sol_equa(n)
     end
     result
 end
+
+=end

@@ -48,8 +48,7 @@ class Dictionary
 
 end
 
-
-
+=begin
 
 class Dictionary
   def initialize(words)
@@ -87,3 +86,5 @@ class Dictionary
     d[m][n]
   end
 end
+
+=end

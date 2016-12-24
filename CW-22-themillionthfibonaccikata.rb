@@ -12,9 +12,6 @@ HINT I: Can you rearrange the equation fib(n + 2) = fib(n + 1) + fib(n) to find 
 
 HINT II: See http://mitpress.mit.edu/sicp/chapter1/node15.html
 
-p' = p**2 + q**2
-q' = 2pq + q**2
-
 https://www.codewars.com/kata/53d40c1e2f13e331fc000c26/train/ruby
 
 =end
@@ -23,6 +20,9 @@ def iterfib(second_fib_seed, first_fib_seed, r, q, counter)
   if counter == 0
     first_fib_seed
   else
+    # algorithm based on Hint II above (Structure and Interpretation of Computer Programs)
+    # p' = p**2 + q**2
+    # q' = 2pq + q**2
     counter.even? ? iterfib(second_fib_seed, first_fib_seed, r**2 + q**2, 2*r*q + q**2, counter/2) : iterfib(first_fib_seed*q + second_fib_seed*q + second_fib_seed*r, first_fib_seed*r + second_fib_seed*q, r, q, counter-1)
   end
 end

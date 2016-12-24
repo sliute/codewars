@@ -1,7 +1,7 @@
 def protein(rna)
 
   rna_hash = {
-      # Phenylalanine
+    # Phenylalanine
     'UUC'=>'F', 'UUU'=>'F',
     # Leucine
     'UUA'=>'L', 'UUG'=>'L', 'CUU'=>'L', 'CUC'=>'L','CUA'=>'L','CUG'=>'L',

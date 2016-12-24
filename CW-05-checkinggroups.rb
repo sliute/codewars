@@ -8,4 +8,4 @@ def group_check(s)
   stack.empty?
 end
 
-puts group_check('((){}[])[])')
+puts group_check('({}([]))')

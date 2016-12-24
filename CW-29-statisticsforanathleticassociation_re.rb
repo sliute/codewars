@@ -1,4 +1,8 @@
+# Helped a colleague with bugs in their own solution of this kata
+# as per the in-line comments below.
+
 require 'time'
+
 def time_out(number)
     hrs = number/3600
     number -= hrs*3600
@@ -14,10 +18,20 @@ def range(array)
 end
 
 def median(array)
-    x = array.length / 2
+  x = array.length / 2
+  array.sort!
+  if array.length % 2 == 1
     median = array[x].to_s
     medianarray = median.split(' ')
     median = medianarray[1].split(':').join('|')
+  else
+      median = (array[x - 1] + array[x]).to_f / 2
+    medianarray = median.to_ssplit(' ')
+    median = medianarray[1].split(':').join('|')
+  end
+    # The initial method did not compute the median correctly.
+    # The array must be sorted for the median to be correctly computed.
+    # I rewrote it to also work for arrays of even length.
 end
 
 def mean(array)
@@ -44,8 +58,7 @@ def stat(strg)
         hrsarray << hrs
       end
      end
-    puts "Range: " + range(hrsarray) + " Median: " + median(hrsarray) + " Average: " + mean(splitstring)
+    "Range: " + range(hrsarray) + " Average: " + mean(splitstring) + " Median: " + median(hrsarray)
+    # puts always returns nil. And the required order of parameters is R-A-M, not R-M-A.
+    # I removed the puts and re-ordered the parameters.
 end
-strg = "01|15|59, 1|47|16, 01|17|20, 1|32|34, 2|17|17"
-
-print stat(strg)

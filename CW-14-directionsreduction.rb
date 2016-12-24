@@ -41,9 +41,7 @@ end
 p dirReduc(a)
 
 
-#top solutions
-
-a = ["NORTH", "SOUTH", "SOUTH", "EAST", "WEST", "NORTH", "WEST"]
+=begin
 
 def dirReduc(arr)
   numval = {
@@ -64,10 +62,6 @@ def dirReduc(arr)
 
 end
 
-p dirReduc(a)
-
-
-
 OPPOSITE = {
   "NORTH" => "SOUTH",
   "SOUTH" => "NORTH",
@@ -82,3 +76,5 @@ def dirReduc(arr)
   end
   stack
 end
+
+=end

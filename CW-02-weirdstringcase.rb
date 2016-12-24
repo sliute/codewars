@@ -17,7 +17,7 @@ puts weirdcase("This is something")
 
 
 
-# top solutions
+=begin
 
 def weirdcase string
   string.gsub(/(\w{1,2})/) { |s| $1.capitalize }
@@ -34,4 +34,4 @@ def weirdcase(string)
   end.join(' ')
 end
 
-puts weirdcase('Abel cabel si cu BABEL')
+=end

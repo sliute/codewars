@@ -71,7 +71,7 @@ class RomanNumerals
 
 end
 
-
+=begin
 
 class RomanNumerals
   FROM_ROMAN = {
@@ -113,3 +113,5 @@ class RomanNumerals
     result
   end
 end
+
+=end

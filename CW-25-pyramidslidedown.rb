@@ -29,6 +29,8 @@ def longest_slide_down(pyramid)
   }.max
 end
 
+=begin
+
 def longest_slide_down(pyramid)
   very_last_row = pyramid.pop
   pyramid.reverse.inject(very_last_row) do |last_row, row|
@@ -40,3 +42,5 @@ end
 def longest_slide_down pyramid
   pyramid.reverse.reduce{|y, x| x.map.with_index{|c, j| c + y.slice(j,2).max }}.max
 end
+
+=end

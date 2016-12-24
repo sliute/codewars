@@ -72,8 +72,7 @@ end
 
 p get_pins("1")
 
-
-
+=begin
 
 def get_pins(observed)
   mapping = {
@@ -115,3 +114,5 @@ def get_pins(observed)
 
   combos.shift.product(*combos).map(&:join)
 end
+
+=end

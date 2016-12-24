@@ -1,5 +1,4 @@
 def iq_test(numbers)
-  #your code here
 
   number_array = numbers.split.map(&:to_i)
   evenness_array = []
@@ -40,9 +39,9 @@ def iq_test(numbers)
 
 end
 
-puts iq_test("1 2 2")
+puts iq_test("4 2 3 1")
 
-# top solution
+=begin top solution
 
 def iq_test(numbers)
   nums = numbers.split.map(&:to_i).map(&:even?)
@@ -50,3 +49,5 @@ def iq_test(numbers)
 end
 
 puts iq_test("1 1 2")
+
+=end

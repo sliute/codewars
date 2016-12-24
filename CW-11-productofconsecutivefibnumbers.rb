@@ -15,7 +15,7 @@ end
 puts productFib(4895)
 
 
-#top solution
+=begin
 
 def productFib(prod)
   a, b = [0, 1]
@@ -25,4 +25,4 @@ def productFib(prod)
   [a, b, prod == a * b]
 end
 
-puts productFib(4895)
+=end

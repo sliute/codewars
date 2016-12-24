@@ -1,6 +1,6 @@
 =begin
-Your task, is to create a NxN spiral with a given size.
 
+Your task, is to create a NxN spiral with a given size.
 For example, spiral with size 5 should look like this:
 
 00000
@@ -10,9 +10,7 @@ For example, spiral with size 5 should look like this:
 00000
 
 General rule-of-a-thumb is, that the snake made with '1' cannot touch to itself.
-
 https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/ruby
-
 
 #require 'matrix'
 
@@ -28,8 +26,6 @@ https://www.codewars.com/kata/534e01fbbb17187c7e0000c6/train/ruby
 #
 #  return [[1]] if size == 1
 #  ...
-
-
 
 =end
 
@@ -99,7 +95,6 @@ def spiralize(size)
 
 end
 
-
 =begin
 
 def spiralize(size)
@@ -125,8 +120,6 @@ def add_rows(array)
 end
 
 
-
-
 def draw(x, y, array, dir_x, dir_y, flag, turn)
   return true if turn == array.size
   array[x][y] = 1
@@ -144,15 +137,12 @@ def draw(x, y, array, dir_x, dir_y, flag, turn)
   else
     draw(x+dir_x, y+dir_y, array, dir_x, dir_y, flag, turn)
   end
-
 end
 
 def spiralize(size)
   grid = Array.new(size){ Array.new(size){0}}
-
   x,y = 0,0
   dir_x, dir_y, flag = 0, 1, -1
-
   draw(x,y, grid, dir_x, dir_y, flag, 0)
   grid
 end

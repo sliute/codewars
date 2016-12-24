@@ -4,8 +4,10 @@ def createPhoneNumber(numbers)
   phone_number
 end
 
-#top solution
+=begin
 
 def createPhoneNumber(array)
   '(%d%d%d) %d%d%d-%d%d%d%d' % array
 end
+
+=end

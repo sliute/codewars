@@ -24,9 +24,12 @@ def  first_non_repeating_letter(s)
   holder
 end
 
+=begin
+
 def  first_non_repeating_letter(s)
- # Code go here
  stringmodified = s.downcase
  char_non_repeating = stringmodified.split(//).select {|v| stringmodified.count(v) == 1}.first
  char_non_repeating ? s[stringmodified.index(char_non_repeating)] : ""
 end
+
+=end

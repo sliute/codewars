@@ -12,9 +12,13 @@ one every 3 is eliminated until one remains
 [1,4,5] => 7 is counted out
 [1,4] => 5 is counted out
 [4] => 1 counted out, 4 is the last element - the survivor!
-The above link about the "base" kata description will give you a more thorough insight about the origin of this kind of permutation, but basically that's all that there is to know to solve this kata.
+The above link about the "base" kata description will give you a more thorough
+insight about the origin of this kind of permutation, but basically that's all that there is to know to solve this kata.
 
-Notes and tips: using the solution to the other kata to check your function may be helpful, but as much larger numbers will be used, using an array/list to compute the number of the survivor may be too slow; you may assume that both n and k will always be >=1.
+Notes and tips: using the solution to the other kata to check your function may
+be helpful, but as much larger numbers will be used, using an array/list to
+compute the number of the survivor may be too slow; you may assume that both
+n and k will always be >=1.
 =end
 
 def josephus_survivor(n, k)

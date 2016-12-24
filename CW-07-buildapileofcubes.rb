@@ -14,7 +14,7 @@ end
 
 puts find_nb(4183059834009)
 
-#top solution
+=begin
 
 def find_nb(m)
   ct = 0
@@ -25,4 +25,4 @@ def find_nb(m)
   m == 0 ? ct : -1
 end
 
-puts find_nb(4183059834009)
+=end

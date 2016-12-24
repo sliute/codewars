@@ -1,6 +1,6 @@
 def isPP(n)
 
-    for i in 2..7
+    for i in 2..9
       if (n ** (1.0/i)) == (n ** (1.0/i)).to_i
         result = [(n ** (1.0/i)).to_i, i]
       end
@@ -10,10 +10,7 @@ def isPP(n)
 
 end
 
-puts isPP(125)
-
-
-#top solutions
+=begin
 
 def isPP(n)
   (2..(n ** 0.5)).each do |m|
@@ -36,3 +33,5 @@ def isPP(n)
       return nil if (a**2)>n
     end
 end
+
+=end

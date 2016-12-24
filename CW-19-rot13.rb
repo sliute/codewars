@@ -7,8 +7,13 @@ I found this joke on USENET, but the punchline is scrambled. Maybe you can decip
 def rot13(message)
   rotateupper = ('A'..'Z').to_a.rotate(13).join
   rotatelower = ('a'..'z').to_a.rotate(13).join
-  (message.tr! "A-Z", rotateupper).tr! "a-z", rotatelower
+  message.tr! "A-Z", rotateupper
+  message.tr! "a-z", rotatelower
   message
 end
 
-puts rot13("Va gur ryringbef, gur rkgebireg ybbxf ng gur BGURE thl'f fubrf.")
+=begin
+
+
+
+=end
